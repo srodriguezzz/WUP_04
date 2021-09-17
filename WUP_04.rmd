@@ -49,6 +49,12 @@ The boxplot shows us that the longer the student is in school the higher their W
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+favstats(WORDSUM~DEGREE,data=WordData)
+```
+
+The median of the graduates is the highest at 11 WORDSUM and mean is also highest for them at 10.1. We can see that based off those numbers, graduates are best off.
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
