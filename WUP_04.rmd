@@ -1,7 +1,7 @@
 ---
 title: "WUP_04"
-author: "Put your name here!"
-date: "fall 2020"
+author: "Sylvia Rodriguez"
+date: "fall 2021"
 output:
   html_document:
     df_print: paged
@@ -11,6 +11,7 @@ output:
 require(knitr)
 require(tidyverse)
 require(tigerstats)
+WordData=read_csv("GSScsv.csv")
 
 ```
 
@@ -35,6 +36,14 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+basicCN <- ggplot(WordData,aes(x=DEGREE,y=WORDSUM))
+
+basicCN + geom_boxplot()
+```
+
+The boxplot shows us that the longer the student is in school the higher their WORDSUM. It also showed that the median for graduate scored at abou 11.5.
 
 ### Numerical Descriptive Results
 
